@@ -1,7 +1,14 @@
 import React from "react";
+import { DUMMY_NEWS } from "@/dummy-news";
+import NewsList from "@/components/news-list";
 
-function page() {
-  return <div>News Page</div>;
+function NewsPage() {
+  return (
+    <>
+      <h1>News Page</h1>
+      <NewsList news={DUMMY_NEWS} />
+    </>
+  );
 }
 
-export default page;
+export default NewsPage;
