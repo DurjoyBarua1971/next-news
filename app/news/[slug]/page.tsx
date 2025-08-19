@@ -22,12 +22,14 @@ export default async function NewsDetailPage({
   return (
     <article className="news-article">
       <header>
+        <Link href={`/news/${newsItem.slug}/image`}>
         <Image
           src={`/images/news/${newsItem.image}`}
           alt={newsItem.title}
-          width={600}
+          width={200}
           height={100}
         />
+        </Link>
         <h1>{newsItem.title}</h1>
         <time dateTime={newsItem.date}>{newsItem.date}</time>
       </header>
